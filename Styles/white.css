@@ -1,0 +1,765 @@
+/* Color: White */
+
+body {
+    background: #fff;
+    color: #666;
+}
+a {
+    color: #999;
+    font-weight: normal;
+    text-decoration: none;
+}
+a:hover {
+    color: #6e6e6e;
+    text-decoration:none;
+}
+.Textbox,
+textarea {
+    border: 1px solid #efefef;
+}
+
+#Wrapper,
+.Breadcrumb {
+
+}
+
+#Wrapper .Breadcrumb{
+    border-top: none;
+}
+#TopMenu li.CartLink {
+    background: url(%%GLOBAL_TPL_PATH%%/images/white/CartSmall.gif) 100% 50% no-repeat;
+    padding-right: 16px;
+}
+#TopMenu li a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+#TopMenu li div {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+#TopMenu li a:hover {
+    color: #9a9a9a;
+    text-decoration: underline;
+}
+
+#SearchForm form {
+}
+#SearchForm input {
+    background:rgb(102, 102, 102);
+    border:0;
+    color: #fff;
+}
+#SearchForm input:focus {
+    color: #000;
+}
+#SearchForm .Button {
+    border: 0;
+}
+
+div.categoryPicker {
+    border:1px solid #d2d2d2 !important;
+    padding-left: 10px;
+    padding-bottom: 8px;
+}
+
+#Menu .ActivePage > a{color:#6db6ac;}
+#SideNewProducts img {
+    border:1px solid #dcdcdc;
+}
+
+#ProductReviews .btn{background-color:#ccc;}
+
+.order-number {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero_slider .Block div {
+    border-bottom: 4px solid #000;
+}
+.hero_slider .Block div div {
+    border: 0;
+}
+.hero div .text h1,
+.hero div .text h2,
+.hero div .text h3,
+.hero div .text p,
+.hero div .text a {
+    color: #000;
+    text-shadow: none;
+}
+.hero div .text.white * { /* Reverse text colour */
+    color: #fff !important;
+    text-shadow: 1px 1px 2px #000 !important;
+}
+
+
+.Block.banner_home_page_bottom div .text.text-light *,
+.Block.banner_category_page_bottom div .text.text-light *,
+.Block.banner_brand_page_bottom div .text.text-light *,
+.Block.banner_search_page_bottom div .text.text-light * { /* Reverse text colour */
+    color: #fff !important;
+    text-shadow: 1px 1px 2px #000 !important;
+}
+
+a.btn_link { /* All boxed links within banners */
+    color: #fff !important;
+    background: #000;
+    text-decoration: none;
+    padding: 2px 10px 2px 10px !important;
+}
+a.btn_link:hover {
+    text-decoration: underline;
+}
+.ToggleSearchFormLink.btn a:hover{
+    color:#000;
+}
+
+.plain.btn {
+    background: #fff !important;
+    text-transform: capitalize !important;
+    font-family: 'Helvetica Neue', Helvetica, Sans-Serif;
+}
+.plain.btn:hover{
+    text-decoration: underline !important;
+}
+
+ .Left h2 {
+    font: normal 14px 'Open Sans', Arial, Helvetica, sans-serif;
+    color:#6db6ac;
+    padding:10px 0;
+}
+
+.Right li {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.Right .ProductList li {
+    border: none;
+    margin-bottom: 10px;
+}
+
+#FooterUpper {
+
+}
+#Footer {
+    border-top: 1px solid #f0f0f0;
+}
+#Footer p {
+    color: #999;
+}
+#Footer a {
+    color: #999;
+}
+#Footer a:hover {
+    color: #777;
+}
+
+
+.NewsletterSubscription input {
+
+}
+.NewsletterSubscription input:focus {
+    color: #000;
+}
+.NewsletterSubscription .Button {
+    border: 0;
+}
+
+
+.ProductList .ProductImage {
+    border: 1px solid #e4e4e4;
+    position:relative !important;
+}
+
+.ProductList li .ProductImage .hover{ position:absolute; height:100%; width:100%;  top: 0; left: 0; z-index: 2; display: none;
+filter: alpha(opacity = 20) !important;}
+
+.ProductList li .ProductImage:hover .hover {
+display: block;
+}
+
+
+.ProductPrice,
+.ProductList em {
+    font-style: normal;
+    margin-top: 5px;
+}
+.ProductList li .ProductCompareButton {
+    color: #606060;
+    clear: both;
+}
+.ProductList .Rating {
+    color: #9a9a9a;
+    float: left;
+    width: 100%;
+    padding: 10px 0 20px;
+}
+
+
+.Right .TopSellers li .TopSellerNumber { /* Contains the number of the item */
+    display: none;
+}
+
+
+.Breadcrumb {
+    color: #b0b0b0;
+}
+.Breadcrumb a {
+    color: #b0b0b0;
+}
+.Breadcrumb a:hover {
+    color: #9a9a9a;
+}
+
+
+.CompareItem {
+    width:200px;
+    border-left: solid 1px #f0f0f0;
+}
+.CompareFieldName {
+    font: normal 14px 'Open Sans', Arial, Helvetica, sans-serif;
+    color:#999;
+    border-bottom: 1px solid #f0f0f0;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+.CompareFieldName a{color:#999;}
+.CompareFieldTop {
+    border-bottom:solid 1px #f0f0f0;
+}
+
+
+
+.CompareFieldName {
+padding-left: 0 !important;
+}
+.CompareFieldTop.CompareFieldName {
+color: #6DB6AC;
+}
+
+.CompareFieldTop a:hover {
+    color:#4e4e4e;
+}
+.CompareCenter {
+    border-bottom:solid 1px #f0f0f0;
+}
+.CompareLeft {
+    border-bottom:solid 1px #f0f0f0;
+}
+.CompareLeft {
+    color: #999999;
+    padding: 8px 10px;
+}
+
+
+.CartCode {
+    border: 1px solid #f0f0f0;
+    border-width: 1px 0 0;
+}
+.ViewCartLink {
+    background: url('%%GLOBAL_TPL_PATH%%/images/white/Cart.gif') no-repeat 0 50%;
+}
+
+table.CartContents,
+table.General {
+    border: 0;
+}
+
+table.CartContents th,
+table.General th {
+    color:#999;
+    text-transform: uppercase;
+    padding:20px 23px;
+    text-align: left;
+    border-top:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+    font: normal 14px 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.CartContents td {
+    padding: 20px 23px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.CartContents tfoot .SubTotal.First td{
+    border-top: 0;
+}
+.CartContents tfoot .SubTotal td {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 0;
+    color: #606060;
+}
+.CartContents tfoot .GrandTotal td {
+    color: #000;
+}
+
+.productAttributes td{
+    padding:5px 0 !important;
+    position:relative;
+    left:-3px;
+}
+.productAttributes label{
+    font-size:12px;
+    color:#666;
+    width:150px;
+    display:block;
+}
+.productAttributes span{
+    width:200px;
+    display:block;
+}
+/* Wish List Form
+....................................................................... */
+.header .actions .btn {
+    margin-left: 5px;
+}
+
+#wishlistsform .action .edit a{
+    background:url(%%GLOBAL_TPL_PATH%%/images/edit.png) transparent left top no-repeat;
+}
+
+#wishlistsform .action .delete a{
+    background:url(%%GLOBAL_TPL_PATH%%/images/trash.png) transparent left top no-repeat;
+}
+
+#wishlistsform .action .share a{
+    background:url(%%GLOBAL_TPL_PATH%%/images/share.png) transparent left top no-repeat;
+}
+
+/*....................................................................... */
+#CartHeader {
+
+}
+
+.JustAddedProduct {
+    border: 1px solid #dcdcdc;
+    background: #fff;
+}
+.JustAddedProduct strong,
+.JustAddedProduct a {
+    text-decoration: none;
+}
+.JustAddedProduct a:hover {
+    text-decoration: underline;
+}
+
+
+
+.CheckoutRedeemCoupon {
+    background: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.SubCategoryList,
+.SubBrandList {
+    background: #f4f4f4;
+    margin: 20px 0;
+}
+
+.Message {
+    color:#000;
+    border-width:1px;
+    border-style: solid;
+    border-color: transparent;
+    background-position: 12px center;
+    background-repeat: no-repeat;
+}
+
+.Message a,
+.InfoMessage a,
+.SpecificInfoMessage a,
+.SuccessMessage a,
+.ErrorMessage a{
+    text-decoration: underline;
+}
+
+.InfoMessage {
+border: solid 1px;
+    background-color: #effdfd;
+    background-image: url('%%GLOBAL_TPL_PATH%%/images/white/InfoIcon.png');
+    border-color: #d9f1f1;
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    padding :10px 10px 10px 50px;
+}
+.SpecificInfoMessage {
+border: solid 1px;
+    color: #606060;
+    background-color: #f4f4f4;
+    background-position: 12px center;
+    padding :10px 10px 10px 50px;
+}
+.SuccessMessage {
+    border: solid 1px;
+    background-color: #dafbd8;
+    background-image: url('%%GLOBAL_TPL_PATH%%/images/white/SuccessIcon.png');
+    border-color: #c6e7c4;
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    padding :10px 10px 10px 50px;
+    margin-top: 15px;
+}
+.ErrorMessage {
+border: solid 1px;
+    background-color: #fbe9e7;
+    background-image: url('%%GLOBAL_TPL_PATH%%/images/white/ErrorIcon.png');
+    border-color: #f5d8d4;
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    padding :10px 10px 10px 50px;
+}
+
+.ComparisonTable tr:hover td,
+.ComparisonTable tr.Over td {
+    background: #f4f4f4;
+}
+.QuickSearch {
+    border: 1px solid #dcdcdc;
+    margin-top: 3px;
+    margin-left: -19px;
+    -webkit-box-shadow: #dcdcdc 0px 0px 3px;
+-moz-box-shadow: #dcdcdc 0px 0px 3px;
+box-shadow: #dcdcdc 0px 0px 3px;
+}
+
+td.QuickSearchResultMeta {
+    padding-right: 20px;
+}
+.QuickSearchHover td {
+    background: #f4f4f4;
+}
+
+.QuickSearchResultImage  div {
+width: 78px;
+height: 78px;
+border: solid #efefef 1px;
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+}
+
+
+
+
+
+
+td.QuickSearchResultMeta {
+   vertical-align: top;
+}
+
+
+.QuickSearchResult .Price {
+    color: #6db6ac;
+    font-weight: 300;
+}
+
+
+.QuickSearchResult .RatingIMG {
+display: block;
+}
+
+.CreateAccount {
+    border-right: 1px solid #F0F0F0;
+}
+.AccountLogin {
+}
+
+.SearchTips .Examples {
+    background: #f4f4f4;
+}
+hr {
+    background: #EFEFEF;
+    border: #EFEFEF;
+    margin: 20px 0;
+}
+.Right hr {
+    background: transparent;
+    border: 0;
+}
+.MiniCart .SubTotal {
+    color: #4e4e4e;
+}
+
+
+/* Shipping Estimation on Cart Contents Page */
+.EstimateShipping {
+    background: #f4f4f4;
+}
+
+
+/* Express Checkout */
+.ExpressCheckoutBlock .ExpressCheckoutTitle {
+    background: #efefef;
+    color: #999;
+    font: normal 14px 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.ExpressCheckoutBlockCollapsed .ExpressCheckoutTitle {
+    background: #ccc;
+    color: #fff;
+    font: normal 14px 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.ExpressCheckoutBlockCompleted .ExpressCheckoutCompletedContent {
+    color: #efefef;
+}
+.ExpressCheckoutBlock h3{
+    padding-bottom:20px;
+}
+
+
+
+/* Tabbed Navigation */
+.TabNav {
+    border-bottom: 1px solid #dedede;
+}
+.TabNav li a {
+    border: 1px solid #dedede;
+    background: #fff;
+    color: #000;
+
+}
+.TabNav li a:hover {
+    text-decoration: underline;
+}
+.TabNav li.Active a {
+    border-bottom: 1px solid #dedede;
+    background: #dedede;
+}
+
+/* Product Videos */
+
+.currentVideo {
+    background-color: #e7e7e7;
+}
+
+.videoRow:hover {
+    background-color: #efefef;
+}
+
+.CartContents .ItemShipping th {
+    border-bottom-color: #dcdcdc;
+    border-top-color: #dcdcdc;
+    background: #f4f4f4;
+    color: #2f2f2f;
+}
+
+
+/* start fast cart styles */
+#fastCartContainer {
+    font-size: 13px;
+    color: #000;
+}
+.fastCartContent h2 {
+    background-color:transparent;
+}
+.fastCartContent h3 {
+    background-color:transparent;
+}
+.fastCartThumb {
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+}
+.fastCartSummaryBox {
+    background-color: #f4f4f4;
+}
+.fastCartSummaryBox a:hover {
+    text-decoration: underline;
+}
+
+.fastCartSummaryBox .subtotal {
+    border-color: #fff;
+}
+.fastCartSummaryBox .ProductPrice {
+    border-color: #fff;
+}
+.fastCartContent .fastCartTop a {
+    color: #6DB6AC;
+}
+
+.fastCartContent .ProductPrice, .fastCartContent .Quantity {
+    color: #606060;
+}
+.fastCartContent p {
+    color: #444444;
+}
+
+.fastCartBottom h3 {
+    border-top: 0px solid #dadada;
+    border-bottom: 0px solid #dadada;
+}
+
+/* end fast cart styles */
+
+
+/* Modal */
+#ModalContainer, .modalContainer {
+    height: auto!important;
+}
+
+
+#QuickViewProductDetails td,
+#QuickViewProductDetails .productAttributeRow,
+.DetailRow {
+
+}
+
+.SubCategoryListGrid {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#AjaxLoading,
+.OrderItemMessage,
+.CurrencyList a.Sel,
+.SharePublicWishList {
+    background: #f4f4f4;
+}
+
+#socnet {
+float: right;
+}
+
+#socnet .icon-social-theme {
+    margin-left: 10px;
+    background-image: url(%%GLOBAL_TPL_PATH%%/images/sprite-social.png);
+}
+
+
+#prodAccordion .Block h2 {
+    border-top: 1px solid #dadada;
+    background: url(%%GLOBAL_TPL_PATH%%/images/arrow-down.jpg) 100% 50% no-repeat;
+}
+#prodAccordion .Block:first-child h2{ border:0;}
+#prodAccordion .Block.current h2 {
+    background: url(%%GLOBAL_TPL_PATH%%/images/arrow-up.jpg) 100% 50% no-repeat;
+}
+#prodAccordion .Block:last-child {
+    border-bottom: 1px solid #dadada;
+}
+.prodAccordionContent {
+    border-top: 1px solid #eaeaea;
+}
+.prodAccordionContent p{color:#666;}
+
+#TopMenu .phoneIcon {
+    background: url('%%GLOBAL_TPL_PATH%%/images/white/phoneIcon.png') no-repeat 0 2px;
+    padding-left: 13px;
+    border-right: 1px solid;
+}
+#HeaderLower{ border-bottom:1px solid #f0f0f0; border-top:1px solid #f0f0f0; }
+
+/* For the currency chooser */
+#HeaderLower {
+    position: relative;
+}
+#currency-chooser {
+    float: right;
+    clear: both;
+    font-size: 11px;
+}
+#currency-chooser .BlockContent {
+    height: auto;
+}
+#currency-chooser .currency-info {
+    float:left;
+    margin-right: 5px;
+    color: #b8b8b8;
+}
+#change-currency {
+    color: #000;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+}
+#currency-chooser .currencies {
+    background: #f8f8f8;
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    z-index: 10;
+    height: auto;
+    width: 168px;
+}
+#currency-chooser .currencies:before {
+    width: 0;
+    height: 0;
+    border-left: 15px solid rgba(248, 248, 248, 0);
+    border-right: 15px solid rgba(248, 248, 248, 0);
+    border-bottom: 15px solid #f8f8f8;
+}
+#currency-chooser .currencies dd {
+    background: transparent;
+    border: #ededed solid 1px;
+}
+#currency-chooser .currencies dd a {
+    background: transparent;
+    border: none;
+    display: block;
+    padding: 5px;
+}
+#currency-chooser .currencies dd a.Sel {
+    background: #fff;
+}
+
+.ProductPriceWrap {
+
+}
+
+.PrimaryProductDetails {
+
+}
+
+
+/* Gift Certificate
+....................................................................... */
+
+
+/* Form fields */
+input.field-xlarge,
+select.field-xlarge {
+    width: 190px;
+    padding: 8px 4px 7px 4px;
+
+    border: 1px solid #EFEFEF;
+}
+select.field-xlarge {
+    width: 200px;
+    padding: 0;
+}
+.HorizontalFormContainer dt {
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.AccountOrdersList {
+    list-style: none;
+    margin: 0;
+}
+.AccountOrdersList > li {
+    margin-top: 20px;
+}
+.btn.AddCartButton {
+width: 100px !important;
+text-align: center !important;
+}
+.CheckoutOrderComments{
+    clear: both;
+    padding-top: 10px;
+}
+
+#SharingDataChoices li {
+    width: 175px;
+    height: auto;
+}
+#SharingDataChoices li img{
+    max-width: 100%;
+}

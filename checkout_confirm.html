@@ -1,0 +1,23 @@
+%%Panel.HTMLHead%%
+<body>
+	<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/cart.js?%%GLOBAL_JSCacheToken%%"></script>
+	<div id="Container">
+		%%Panel.Header%%
+		<div id="Wrapper">
+			%%Panel.WrapperBanner%%
+			<h1 class="PageHeader">%%LNG_ConfirmYourOrder%%</h1>
+			<div class="Content Widest" id="LayoutColumn1">
+				%%Panel.ConfirmOrder%%
+			</div>
+			<div class="clear"></div>
+		</div>
+		%%Panel.Footer%%
+	</div>
+<script type="text/javascript">	
+$(document).ready(function() {
+
+							$('.SubTotal td strong:contains("Grand")').closest('tr').addClass('GrandTotal');
+ });	
+</script>					
+</body>
+</html>

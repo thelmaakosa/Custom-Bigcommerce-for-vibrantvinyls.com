@@ -1,0 +1,18 @@
+<li>
+	<div class="header">
+		<h3>%%LNG_Order%% #%%GLOBAL_OrderId%%</h3>
+		<div class="actions">
+			<a href="%%GLOBAL_ShopPath%%/account.php?action=view_order&order_id=%%GLOBAL_OrderId%%" class="btn">%%LNG_ViewOrder%%</a>
+			<a href="%%GLOBAL_ShopPath%%/account.php?action=new_return&amp;order_id=%%GLOBAL_OrderId%%" class="btn btn-secondary" style="display: %%GLOBAL_DisableReturnButton%%;">%%LNG_ReturnOrderItems%%</a>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<p class="Meta">
+		%%LNG_OrderDate%%: %%GLOBAL_OrderDate%%<br />
+	</p>
+	<strong>%%LNG_YourOrderContainsTheFollowingItems2%%</strong>
+	<ul class="OrderItemList">
+		%%GLOBAL_AccountOrderItemList%%
+	</ul>
+	<hr />
+</li>

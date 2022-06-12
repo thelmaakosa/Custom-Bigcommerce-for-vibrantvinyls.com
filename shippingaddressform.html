@@ -1,0 +1,29 @@
+%%Panel.HTMLHead%%
+<body>
+	<div id="Container">
+	%%Panel.Header%%
+	
+	<div id="Wrapper">
+		%%Panel.WrapperBanner%%
+		<h1 class="title">%%LNG_YourAccount%%</h1>
+		<div class="Left" id="LayoutColumn1">
+			%%Panel.SideAccountMenu%%
+		</div>
+		<div class="Content Wide" id="LayoutColumn2">
+			%%Panel.ShippingAddressForm%%
+		</div>
+		<div class="clear"></div>
+	</div>
+	%%Panel.Footer%%
+</div>
+<script type="text/javascript">
+$(document).ajaxComplete(function(event,request, settings) {
+   						
+		$('input[type=radio], input[type=checkbox], input[type=file], select').not('.productOptionPickListSwatch input[type=radio], .productOptionViewRectangle input[type=radio]').uniform();
+		
+});
+
+</script>
+
+</body>
+</html>

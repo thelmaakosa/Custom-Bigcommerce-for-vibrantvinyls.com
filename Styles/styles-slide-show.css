@@ -1,0 +1,134 @@
+/* this file provides theme-specific styles that affect the carousel
+ *
+ * these changes have been placed in a separate file because they are included
+ * in the control panel when the carousel is being previewed
+ *
+ * they cannot be included in slide-show.css because that is compiled
+ * automatically from slide-show.scss */
+
+/* fixes incorrect width created by the `slide' transition in the admin preview
+ * modal */
+#slide-show-preview .slide-show-render.slide-show {
+	width: 980px;
+}
+
+.slide-show-render.slide-show {
+	position: relative;
+    margin-bottom: 20px;
+}
+.slide-show-render ul, 
+.slide-show-render li, 
+.slide-show-render ol  {
+list-style: none !important;
+}
+.slide-show-render .slides li {
+width: 980px !important;
+height: 450px !important;
+border: solid 0px;
+}
+.slide-show-render .slides li img {
+	max-width: 980px;
+	max-height: 450px;
+	width: 980px;
+	height: 450px;
+}
+.slide-show-render .flex-control-paging {
+width: 100%;
+bottom: auto;
+bottom: 30px;
+}
+.flex-control-paging li  {
+margin: 0 4px !important;
+}
+.flex-control-paging li a {
+background: rgba(255, 255, 255, 0.5) !important;
+-webkit-box-shadow: none !important;
+-moz-box-shadow: none !important;
+box-shadow: none  !important;
+height: 13px !important;
+width: 13px !important;
+}
+.flex-control-paging li a.flex-active {
+background: rgba(110, 147, 134, 0.85) !important;
+}
+.slide-show-render-full .slide-overlay {
+width: 500px;
+left: 50%;
+top: 40%;
+margin-left: -250px;
+text-align: center;
+}
+.slide-show-render-full .slide-heading, 
+.slide-show-render-full .slide-text  {
+font-family: 'Open Sans', Helvetica, Arial, Sans-Serif;
+font-size: 30px;
+text-shadow: none; 
+font-weight: 400;
+margin: 0;
+background: rgba(255, 255, 255, 0.9);
+background: #fff \9;
+}
+.slide-show-render-full .slide-heading {
+padding:0px;
+line-height: 130%;
+}
+.slide-show-render-full .slide-text {
+font-size: 18px;
+padding: 0px;
+line-height:180%;
+}
+.slide-show-render .slide-button {
+line-heght: 35px;
+margin: 0;
+text-align: center;
+}
+
+.slide-show-render-full .slide-button span {
+font-family: 'Open Sans', Helvetica, Arial, Sans-Serif;
+display: inline-block;
+font-size: 18px;
+font-weight: 400;
+background: #69B9AE;
+background: rgba(109, 182, 172, 0.85);
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+text-shadow: none;
+}
+.slide-show-render-full .slide-button span:hover {
+background: rgba(109, 182, 172, 1);
+} 
+.slide-show-render-full .flex-direction-nav a {
+width: 73px;
+height: 80px;
+margin-top: -20px;
+opacity: 100 !important;
+filter: alpha(opacity = 100) !important;
+}
+
+.slide-show-render .flex-prev {
+background-image: url(../images/prev.png);
+left: -36px !important;
+}
+.slide-show-render .flex-next {
+background-image: url(../images/next.png);
+right: -36px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

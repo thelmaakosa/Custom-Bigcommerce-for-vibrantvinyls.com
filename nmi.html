@@ -1,0 +1,49 @@
+<p class="InfoMessage Message">
+	%%LNG_NMIPaymentIntro%%
+</p>
+<p class="ErrorMessage Message" style="display:%%GLOBAL_HideNMIError%%">
+	%%LNG_NMIProcessingError%%<br />
+	<strong>%%GLOBAL_NMIErrorMessage%%</strong>
+</p>
+<form action="%%GLOBAL_ShopPathSSL%%/checkout.php?action=process_payment" method="post" onsubmit="return check_NMI_payment_form()">
+	<div class="FormContainer HorizontalFormContainer">
+		<dl>
+			<dt><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_NMICardHoldersName%%:</span></dt>
+			<dd><input type="text" name="NMI_name" id="NMI_name" value="%%GLOBAL_NMIName%%" size="30" class="Textbox Field200" /></dd>
+
+			<dt><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_NMICreditCardNo%%:</span></dt>
+			<dd>
+				<input type="text" name="NMI_ccno" id="NMI_ccno" value="%%GLOBAL_NMINum%%" size="30" class="Textbox Field200" />
+				<br />
+				<small>%%LNG_NMICreditCardNoHelp%%</small>
+			</dd>
+
+			<dt><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_NMIExpirationDate%%:</span></dt>
+			<dd>
+				<select name="NMI_ccexpm" id="NMI_ccexpm">
+					<option value=""></option>
+					%%GLOBAL_NMIMonths%%
+				</select>
+				<select name="NMI_ccexpy" id="NMI_ccexpy">
+					<option value=""></option>
+					%%GLOBAL_NMIYears%%
+				</select>
+			</dd>
+
+			<dt style="display: %%GLOBAL_NMIHideCVV2%%"><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_NMICreditCardCCV2%%:</span></dt>
+			<dd id="CVV2Input" style="display: %%GLOBAL_NMIHideCVV2%%">
+				<input type="text" class="Textbox" name="NMI_cccode" id="cc_cvv2" value="%%GLOBAL_NMICCV2%%" size="4" />
+				&nbsp;<small><a href="#" id="CVV2Help">%%LNG_WhatsThis%%</a></small>
+			</dd>
+
+			<dt><span class="FormFieldLabel">%%LNG_NMITotalAmount%%:</span></dt>
+			<dd>
+				<em class="ProductPrice">%%GLOBAL_OrderAmount%%</em>
+			</dd>
+		</dl>
+		<p class="Submit">
+			<input type="submit" value="%%LNG_NMIPayForOrder%%" class="btn-secondary" />
+		</p>
+	</div>
+</form>
+%%Panel.NMIPaymentJavaScript%%

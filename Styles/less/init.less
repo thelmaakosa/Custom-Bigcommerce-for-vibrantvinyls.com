@@ -1,0 +1,442 @@
+/**
+ *   Bigcommerce HealthBeauty
+ *   Style Initialisation
+ */
+
+// @Section - Store Header
+
+#HeaderUpper{
+    background-color:@color-header-background;
+}
+
+
+#TopMenu{
+    background-color:@color-header-background;
+}
+
+
+#HeaderLower{
+    background-color:@color-header-background;
+}
+
+
+#TopMenu li a{
+    color:darken(@color-header-background, 40%);
+}
+
+
+#TopMenu li div {
+    color:darken(@color-header-background, 40%);
+}
+
+
+#Logo h1 a{
+    color:@color-store-name;
+}
+
+
+#HeaderLower li a{
+    color:@color-menu-text;
+}
+
+
+#HeaderLower{
+    border-bottom:1px solid darken(@color-header-background, 10%);
+    border-top:1px solid darken(@color-header-background, 10%);
+}
+
+
+#HeaderLower ul ul{
+    background-color: rgba(red(@color-dropdown-menu),green(@color-dropdown-menu),blue(@color-dropdown-menu), 0.85);
+}
+
+#HeaderLower ul ul li {
+    border-bottom-color:lighten(@color-dropdown-menu, 24%);
+}
+
+#HeaderLower ul ul li a:hover{
+    background-color:lighten(@color-dropdown-menu, 12%);
+}
+
+// @Section - Store Footer
+
+#ContainerFooter{
+    background-color:@color-footer-background;
+}
+
+
+#ContainerFooter h2, .NewProducts h2,
+#SimilarProductsByCustomerViews h2,
+.FeaturedProducts h2{
+    color:@color-section-heading;
+}
+
+
+.NewsletterSubscription{
+    border-bottom:1px solid darken(@color-footer-background, 10%);;
+    border-top:1px solid darken(@color-footer-background, 10%);;
+}
+
+
+#Footer{
+    border-top:1px solid darken(@color-footer-background, 10%);;
+}
+
+
+#FooterUpper li a{
+    color:@color-links;
+}
+
+
+#FooterUpper .RecentNews li p{
+    color:darken(#666666, 5%);
+}
+
+
+#Footer p{
+    color:@color-links;
+}
+
+
+#Footer p a{
+    color:@color-links;
+}
+
+
+// @Section-Home Page
+
+#HomeFeaturedProducts h2{
+    color:@color-section-headings;
+}
+
+
+#HomeNewProducts h2{
+    color:@color-section-headings;
+}
+
+
+#HomeFeaturedProducts  .ProductList .ProductDetails a{
+    color:@color-product-names;
+}
+
+
+#HomeNewProducts  .ProductList .ProductDetails a{
+    color:@color-product-names;
+}
+
+
+#HomeFeaturedProducts .ProductList em{
+    color:@color-product-prices;
+}
+
+
+#HomeNewProducts .ProductList em{
+    color:@color-product-prices;
+}
+
+
+#HomeFeaturedProducts .ProductList li .ProductActionAdd a {
+    background-color:@color-buttons !important;
+    border:1px solid @color-buttons;
+}
+
+
+#HomeFeaturedProducts .ProductList li .ProductActionAdd a:hover {
+    background-color:lighten(@color-buttons, 12%) !important;
+    border:1px solid lighten(@color-buttons, 12%);
+}
+
+
+#HomeNewProducts .ProductList li .ProductActionAdd a {
+    background-color:@color-buttons !important;
+    border:1px solid @color-buttons;
+}
+
+
+#HomeNewProducts .ProductList li .ProductActionAdd a:hover {
+    background-color:lighten(@color-buttons, 12%) !important;
+    border:1px solid lighten(@color-buttons, 12%);
+}
+
+
+// @Section-Product Page
+
+#ProductDetails h1{
+    color:@color-product-title;
+}
+
+
+#SimilarProductsByCustomerViews .ProductList .ProductDetails a,
+#SideProductRelated .ProductList .ProductDetails a{
+    color:@color-product-names;
+}
+
+
+#SimilarProductsByCustomerViews .ProductList em,
+#SideProductRelated .ProductList em{
+    color:@color-product-prices;
+}
+
+
+.ProductDetailsGrid .DetailRow.PriceRow .Label{
+    color:@color-product-description;
+}
+
+
+#ProductDetails .DetailRow .RetailPrice{
+    color:@color-product-description;
+}
+
+
+.ProductDetailsGrid .DetailRow.PriceRow .Value em{
+    color:@color-product-description;
+}
+
+
+.ProductDetailsGrid .Label, .productAttributeList .productAttributeLabel{
+    color:@color-product-description;
+}
+
+
+.ProductDetailsGrid .Value, .ProductDetailsGrid .Value a{
+    color:@color-product-description;
+}
+
+
+.productOptionViewRectangle .option label .name{
+    color:@color-product-description;
+}
+
+.WishlistRow a{
+    color:@color-product-description;
+}
+
+
+.AddThisButtonBox{
+    color:@color-product-description;
+}
+
+
+.ProductDescriptionContainer p{
+    color:@color-product-description;
+}
+
+
+.FindByCategory a{
+    color:@color-product-description;
+}
+
+
+.prodAccordionContent p{
+    color:@color-product-description;
+}
+
+
+#ProductDetails .btn-secondary {
+    background-color:@color-add-to-cart !important;
+    border:1px solid @color-add-to-cart;
+}
+
+
+#ProductDetails .btn-secondary:hover{
+    background-color:lighten(@color-add-to-cart, 12%) !important;
+    border:1px solid lighten(@color-add-to-cart, 12%);
+}
+
+#prodAccordion .Block:first-child h2{
+    color:@color-product-description-headings;
+}
+
+
+#prodAccordion .Block h2{
+    color:@color-product-description-headings;
+}
+
+
+#SimilarProductsByCustomerViews h3{
+    color:@color-product-description-headings;
+}
+
+
+#SideProductRelated h2{
+    color:@color-product-description-headings;
+}
+
+
+#SimilarProductsByCustomerViews .ProductList li .ProductActionAdd a {
+    background-color:@color-buttons !important;
+    border:1px solid @color-buttons;
+}
+
+
+#SimilarProductsByCustomerViews .ProductList li .ProductActionAdd a:hover {
+    background-color:lighten(@color-buttons, 12%) !important;
+    border:1px solid lighten(@color-buttons, 12%);
+}
+
+
+#SideProductRelated .ProductList li .ProductActionAdd a {
+    background-color:@color-buttons !important;
+    border:1px solid @color-buttons;
+}
+
+
+#SideProductRelated .ProductList li .ProductActionAdd a:hover {
+    background-color:lighten(@color-buttons, 12%) !important;
+    border:1px solid lighten(@color-buttons, 12%);
+}
+
+
+#QuickViewContent h1{
+    color:@color-product-title;
+}
+
+
+#QuickViewProductDetails .Label, #QuickViewProductDetails .productAttributeLabel{
+    color:@color-product-description;
+}
+
+#QuickViewProductDetails p{
+    color:@color-product-description;
+}
+
+
+#QuickViewProductDetails .Label, #QuickViewProductDetails .productAttributeLabel{
+    color:@color-product-description;
+}
+
+
+#ModalContent a, .ModalContent a{
+    color:@color-product-description;
+}
+
+
+
+.ModalContent{
+    color:@color-product-description !important;
+}
+
+// @Section-Category page
+
+#CategoryHeading h1{
+    color:@color-category-title;
+}
+
+
+#CategoryContent .ProductList .ProductDetails a{
+    color:@color-category-product-name;
+}
+
+
+#CategoryContent .ProductList em,
+#CategoryContent .ProductList .ProductPrice {
+    color:@color-category-product-price;
+}
+
+#CategoryContent .ProductList li .ProductActionAdd a{
+    background-color:@color-category-list-button !important;
+    border:1px solid @color-category-list-button;
+}
+
+
+#CategoryContent .ProductList li .ProductActionAdd a:hover{
+    background-color:lighten(@color-category-list-button, 12%) !important;
+    border:1px solid lighten(@color-category-list-button, 12%);
+}
+
+
+.CompareButton .btn{
+    background-color:@color-compare-selected-button;
+}
+
+
+.CompareButton .btn:hover{
+    background-color:darken(@color-compare-selected-button, 20%) !important;
+}
+
+
+//Background & Fonts
+
+body{
+    background:@color-page-background;
+}
+
+
+.Breadcrumb li a{
+    color:darken(@color-page-background, 40%);
+}
+
+
+.Breadcrumb li{
+    color:darken(@color-page-background, 40%);
+}
+
+
+.SortBox label{
+    color:darken(@color-page-background, 40%);
+}
+
+
+.ProductList .ProductDetails{
+    font-family:@font-page-text;
+}
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: @font-heading-text;
+}
+
+
+/* --- Faceted Search --- */
+
+.facet-container {
+    border-top: @border-style;
+
+    [class^="js-facet-clear"] {
+        color: lighten(@color-page-text, 10%);
+
+        &:hover {
+            color: @color-page-text;
+        }
+    }
+
+    .btn-facet-more-options {
+        color: darken(@color-page-text, 10%) !important;
+
+        &:hover {
+            color: @color-links !important;
+        }
+    }
+
+    .facet-option {
+
+        &:hover {
+            background: @color-border;
+        }
+
+        label,
+        a {
+            color: @color-page-text;
+        }
+
+        .facet-option-product-count {
+            color: lighten(@color-page-text, 20%);
+        }
+
+    }
+    .facet-form {
+
+        .btn {
+            background-color: @color-category-list-button;
+
+            &:hover {
+                background-color: lighten(@color-category-list-button, 12%) !important;
+            }
+        }
+
+    }
+}
+
+.js-faceted-search-container > [class^='js-facet-']:last-of-type .facet-container {
+    border-bottom: @border-style;
+}

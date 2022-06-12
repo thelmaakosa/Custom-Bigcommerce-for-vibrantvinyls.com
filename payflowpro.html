@@ -1,0 +1,49 @@
+<p class="InfoMessage Message">
+	%%LNG_PayflowProPaymentIntro%%
+</p>
+<p class="ErrorMessage Message" style="display:%%GLOBAL_HidePayflowProError%%">
+	%%LNG_PayflowProProcessingError%%<br />
+	<strong>%%GLOBAL_PayflowProErrorMessage%%</strong>
+</p>
+<form action="%%GLOBAL_ShopPathSSL%%/checkout.php?action=process_payment" method="post" onsubmit="return check_payflowpro_payment_form()">
+	<div class="FormContainer HorizontalFormContainer">
+		<dl>
+			<dt><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_PayflowProCardHoldersName%%:</span></dt>
+			<dd><input type="text" name="PayflowPro_name" id="PayflowPro_name" value="%%GLOBAL_PayflowProName%%" size="30" class="Textbox Field200" /></dd>
+
+			<dt><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_PayflowProCreditCardNo%%:</span></dt>
+			<dd>
+				<input type="text" name="PayflowPro_ccno" id="PayflowPro_ccno" value="%%GLOBAL_PayflowProNum%%" size="30" class="Textbox Field200" />
+				<br />
+				<small>%%LNG_PayflowProCreditCardNoHelp%%</small>
+			</dd>
+
+			<dt><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_PayflowProExpirationDate%%:</span></dt>
+			<dd>
+				<select name="PayflowPro_ccexpm" id="PayflowPro_ccexpm">
+					<option value=""></option>
+					%%GLOBAL_PayflowProMonths%%
+				</select>
+				<select name="PayflowPro_ccexpy" id="PayflowPro_ccexpy">
+					<option value=""></option>
+					%%GLOBAL_PayflowProYears%%
+				</select>
+			</dd>
+
+			<dt style="display: %%GLOBAL_PayflowProHideCVV2%%"><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_PayflowProCreditCardCCV2%%:</span></dt>
+			<dd id="CVV2Input" style="display: %%GLOBAL_PayflowProHideCVV2%%">
+				<input type="text" class="Textbox" name="PayflowPro_cccode" id="PayflowPro_cccode" value="%%GLOBAL_PayflowProCCV2%%" size="4" />
+				&nbsp;<small><a href="#" id="CVV2Help">%%LNG_WhatsThis%%</a></small>
+			</dd>
+
+			<dt>%%LNG_PayflowProTotalAmount%%:</dt>
+			<dd>
+				<em class="ProductPrice">%%GLOBAL_OrderAmount%%</em>
+			</dd>
+		</dl>
+		<p class="Submit">
+			<input type="submit" value="%%LNG_PayflowProPayForOrder%%" class="btn-secondary" />
+		</p>
+	</div>
+</form>
+%%Panel.PayflowProPaymentJavaScript%%

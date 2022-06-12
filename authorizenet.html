@@ -1,0 +1,49 @@
+<p class="InfoMessage Message">
+	%%LNG_AuthorizeNetPaymentIntro%%
+</p>
+<p class="ErrorMessage Message" style="display:%%GLOBAL_HideAuthorizeNetError%%">
+	%%LNG_AuthorizeNetProcessingError%%<br />
+	<strong>%%GLOBAL_AuthorizeNetErrorMessage%%</strong>
+</p>
+<form action="%%GLOBAL_ShopPathSSL%%/checkout.php?action=process_payment" method="post" onsubmit="return check_authorizenet_payment_form()">
+	<div class="FormContainer HorizontalFormContainer">
+		<dl>
+			<dt><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_AuthorizeNetCardHoldersName%%:</span> </dt>
+			<dd><input type="text" name="AuthorizeNet_name" id="AuthorizeNet_name" value="%%GLOBAL_AuthorizeNetName%%" size="30" class="Textbox Field200" /></dd>
+
+			<dt><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_AuthorizeNetCreditCardNo%%:</span></dt>
+			<dd>
+				<input type="text" name="AuthorizeNet_ccno" id="AuthorizeNet_ccno" value="%%GLOBAL_AuthorizeNetNum%%" size="30" class="Textbox Field200" />
+				<br />
+				<small>%%LNG_AuthorizeNetCreditCardNoHelp%%</small>
+			</dd>
+
+			<dt><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_AuthorizeNetExpirationDate%%:</span></dt>
+			<dd>
+				<select name="AuthorizeNet_ccexpm" id="AuthorizeNet_ccexpm">
+					<option value=""></option>
+					%%GLOBAL_AuthorizeNetMonths%%
+				</select>
+				<select name="AuthorizeNet_ccexpy" id="AuthorizeNet_ccexpy">
+					<option value=""></option>
+					%%GLOBAL_AuthorizeNetYears%%
+				</select>
+			</dd>
+
+			<dt style="display: %%GLOBAL_AuthorizeNetHideCVV2%%"><span class="Required">*</span> <span class="FormFieldLabel">%%LNG_AuthorizeNetCreditCardCCV2%%:</span></dt>
+			<dd id="CVV2Input" style="display: %%GLOBAL_AuthorizeNetHideCVV2%%">
+				<input type="text" class="Textbox" name="AuthorizeNet_cccode" id="cc_cvv2" value="%%GLOBAL_AuthorizeNetCCV2%%" size="4" />
+				&nbsp;<small><a href="#" id="CVV2Help">%%LNG_WhatsThis%%</a></small>
+			</dd>
+
+			<dt><span class="FormFieldLabel">%%LNG_AuthorizeNetTotalAmount%%:</span></dt>
+			<dd>
+				<em class="ProductPrice">%%GLOBAL_OrderAmount%%</em>
+			</dd>
+		</dl>
+		<p class="Submit">
+			<input type="submit" value="%%LNG_AuthorizeNetPayForOrder%%" class="btn-secondary" />
+		</p>
+	</div>
+</form>
+%%Panel.AuthorizeNetPaymentJavaScript%%

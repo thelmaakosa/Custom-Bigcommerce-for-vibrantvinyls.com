@@ -1,0 +1,490 @@
+/*
+
+Uniform Theme: Uniform Default
+Version: 1.8
+By: Josh Pyles
+License: MIT License
+---
+For use with the Uniform plugin:
+http://uniformjs.com/
+
+*/
+/* General settings */
+div.selector,
+div.selector span,
+div.checker span,
+div.radio span,
+div.uploader,
+div.uploader span.action,
+div.button,
+div.button span {
+  background-image: url("%%GLOBAL_TPL_PATH%%/images/sprite.png");
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased; }
+
+.selector,
+.checker,
+.button,
+.radio,
+.uploader {
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle; }
+
+.selector select:focus,
+.radio input:focus,
+.checker input:focus,
+.uploader input:focus {
+  outline: 0; }
+
+.selector,
+.radio,
+.checker,
+.uploader,
+.button,
+.selector *,
+.radio *,
+.checker *,
+.uploader *,
+.button * {
+  margin: 0;
+  padding: 0; }
+
+.highContrastDetect {
+  background: url("%%GLOBAL_TPL_PATH%%/images/bg-input.png") repeat-x 0 0;
+  width: 0px;
+  height: 0px; }
+
+/* Input & Textarea */
+input.text,
+input.email,
+input.search,
+input.tel,
+input.url,
+input.datetime,
+input.date,
+input.month,
+input.week,
+input.time,
+input.datetime-local,
+input.number,
+input.color,
+input.password,
+select.uniform-multiselect,
+textarea.uniform {
+  padding: 3px;
+  background: url("%%GLOBAL_TPL_PATH%%/images/bg-input.png") repeat-x 0 0;
+  outline: 0; }
+
+/* Remove default webkit and possible mozilla .search styles */
+div.checker input,
+input.search,
+input.search:active {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
+input.text:focus,
+input.email:focus,
+input.search:focus,
+input.tel:focus,
+input.url:focus,
+input.datetime:focus,
+input.date:focus,
+input.month:focus,
+input.week:focus,
+input.time:focus,
+input.datetime-local:focus,
+input.number:focus,
+input.color:focus,
+input.password:focus,
+select.uniform-multiselect:focus,
+textarea.uniform:focus {
+  background: url("%%GLOBAL_TPL_PATH%%/images/bg-input-focus.png") repeat-x 0 0; }
+
+/* Select */
+div.selector {
+  background: url(%%GLOBAL_TPL_PATH%%/images/sel.png) 100% 0 no-repeat;    
+  line-height: 30px;
+  height: 30px;
+  padding: 0 0 0 0;
+  position: relative;
+  overflow: hidden;  }
+div.selector.hover {
+  background-position: 100% -40px;    
+}
+div.selector.fixedWidth {
+  width: 190px; }
+
+div.selector span {
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #666;
+  height: 30px;
+  margin-right: 32px;
+  line-height: 30px;
+  padding: 0 10px;
+  cursor: pointer;
+  display: block;
+  text-align: left; overflow: hidden; }
+
+div.selector.fixedWidth span {
+  width: 155px; }
+
+div.selector select {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  border: none;
+  background: none;
+  position: absolute;
+  height: 30px !important;
+  top: 0px;
+  left: 0px;
+  width: 100% !important; }
+
+/* Checkbox */
+div.checker,
+div.checker span,
+div.checker input {
+  width: 15px;
+  height: 15px; }
+
+div.checker {
+  position: relative; }
+
+div.checker span {
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+  background: #efefef url(%%GLOBAL_TPL_PATH%%/images/check.png) -1000px -1000px no-repeat;    
+}
+div.checker.hover span {
+ background-color: #c5c5c5;    
+}
+div.checker input {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  border: none;
+  background: none;
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1; }
+
+
+
+
+div.checker span.checked {
+  background-position: 50% 50%; 
+}
+
+
+
+/* Radio */
+div.radio,
+div.radio span,
+div.radio input {
+width: 15px;
+height: 16px; }
+
+div.radio {
+  position: relative; }
+
+div.radio span {
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+background: url(%%GLOBAL_TPL_PATH%%/images/radio.png) 0 0 no-repeat;    
+}
+
+div.radio input {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  border: none;
+  background: none;
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center; }
+
+
+
+div.radio span.checked {
+  background-position: 0 -26px; }
+
+
+
+/* Uploader */
+div.uploader {
+  background:none;
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+background: red;
+display: inline-block;
+*display: inline;
+zoom: 1; 
+}
+
+div.uploader span.action {
+  background-position: right -409px;
+  height: 28px;
+  line-height: 28px;
+  width: 82px;
+  text-align: center;
+  float: left;
+  display: inline;
+  overflow: hidden;
+  cursor: pointer; }
+
+div.uploader span.filename {
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  cursor: default;
+  height: 28px;
+  line-height: 28px;
+  background: #fff;
+  margin: 0;
+  line-height: 30px;
+  width: 200px;
+  padding: 0 10px;
+  border: 1px solid #EFEFEF;
+}
+
+div.uploader input {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  cursor: default;
+  width: 100%;
+  height: 100%; 
+ }
+
+div.uploader.focus,
+div.uploader.hover,
+div.uploader:hover {
+  background-position: 0 -353px; }
+
+div.uploader.focus span.action,
+div.uploader.hover span.action,
+div.uploader:hover span.action {
+  background-position: right -437px; }
+
+div.uploader.active span.action,
+div.uploader:active span.action {
+  background-position: right -465px; }
+
+div.uploader.focus.active span.action,
+div.uploader:focus.active span.action,
+div.uploader.focus:active span.action,
+div.uploader:focus:active span.action {
+  background-position: right -493px; }
+
+div.uploader.disabled {
+  background-position: 0 -325px; }
+
+div.uploader.disabled span.action {
+  background-position: right -381px; }
+
+/* Buttons */
+div.button a,
+div.button button,
+div.button input {
+  position: absolute;
+  display: none; }
+
+div.button {
+  background-position: 0 -641px;
+  height: 30px;
+  cursor: pointer;
+  position: relative; }
+
+div.button span {
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  line-height: 1;
+  text-align: center;
+  background-position: right -521px;
+  height: 22px;
+  margin-left: 13px;
+  padding: 8px 15px 0 2px; }
+
+div.button.focus,
+div.button:focus,
+div.button:hover,
+div.button.hover {
+  background-position: 0 -701px; }
+
+div.button.focus span,
+div.button:focus span,
+div.button:hover span,
+div.button.hover span {
+  background-position: right -581px; }
+
+div.button.active,
+div.button:active {
+  background-position: 0 -671px; }
+
+div.button.active span,
+div.button:active span {
+  background-position: right -551px;
+  cursor: default; }
+
+div.button.disabled {
+  background-position: 0 -731px; }
+
+/* Separate from above due to IE8 */
+div.button:disabled {
+  background-position: 0 -731px; }
+
+div.button.disabled span {
+  background-position: right -611px;
+  cursor: default; }
+
+/* Separate from above due to IE8 */
+div.button:disabled span {
+  background-position: right -611px;
+  cursor: default; }
+
+/* INPUT & TEXTAREA */
+input.text,
+input.email,
+input.search,
+input.tel,
+input.url,
+input.datetime,
+input.date,
+input.month,
+input.week,
+input.time,
+input.datetime-local,
+input.number,
+input.color,
+input.password,
+select.uniform-multiselect,
+textarea.uniform {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #777;
+  border-top: solid 1px #aaa;
+  border-left: solid 1px #aaa;
+  border-bottom: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+input.text:focus,
+input.email:focus,
+input.search:focus,
+input.tel:focus,
+input.url:focus,
+input.datetime:focus,
+input.date:focus,
+input.month:focus,
+input.week:focus,
+input.time:focus,
+input.datetime-local:focus,
+input.number:focus,
+input.color:focus,
+input.password:focus,
+select.uniform-multiselect:focus,
+textarea.uniform:focus {
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  border-color: #999; }
+
+/* PRESENTATION */
+/* Buttons */
+div.button.active span,
+div.button:active span {
+  color: #555; }
+
+div.button span {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+div.button.disabled span {
+  color: #bbb; }
+
+/* Separate from above due to IE8 */
+div.button:disabled span {
+  color: #bbb; }
+
+/* Select */
+div.selector {
+  font-size: 12px; }
+
+div.selector select {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+
+
+div.selector span {
+  color: #fff; }
+
+/* Checker */
+div.checker {
+  margin-right: 5px; }
+
+/* Radio */
+div.radio {
+  margin-right: 3px; }
+
+/* Uploader */
+div.uploader span.action {
+background: #ccc; 
+line-height: 30px;
+height: 30px;
+text-transform: uppercase;
+font-size: 10px;
+color: #fff;
+letter-spacing: 1px;
+width: auto;
+padding: 0 10px;
+font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+}
+div.uploader span.action:hover {
+background: #999;
+}
+div.uploader span.filename {
+  color: #777;
+  border-right: solid 1px #bbb;
+  font-size: 11px; }
+
+div.uploader.disabled span.action {
+  color: #aaa; }
+
+div.uploader.disabled span.filename {
+  border-color: #ddd;
+  color: #aaa; }

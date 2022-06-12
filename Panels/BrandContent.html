@@ -1,0 +1,23 @@
+		
+
+<div class="Block Moveable Panel" id="BrandContent">
+		%%SNIPPET_BrandPaging%%
+
+	<div class="BlockContent">
+		<script type="text/javascript">
+		lang.CompareSelectMessage = '%%LNG_CompareSelectMessage%%';
+		</script>
+
+		<form name="frmCompare" id="frmCompare" action="%%GLOBAL_CompareLink%%" method="get" onsubmit="return compareProducts('%%GLOBAL_CompareLink%%')">
+			%%Panel.BrandProductListing%%
+
+			<div class="clear"></div>
+			<div class="CompareButton" style="display:%%GLOBAL_HideCompareItems%%">
+				<input type="submit" value="%%LNG_CompareSelected%%" class="btn" />
+			</div>
+		</form>
+		<div class="PagingBottom">
+			%%SNIPPET_BrandPaging%%
+		</div>
+	</div>
+</div>
